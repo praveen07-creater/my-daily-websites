@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praveen's Space</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background:
+                radial-gradient(circle at top left, #243b55, transparent 45%),
+                radial-gradient(circle at bottom right, #512da8, transparent 45%),
+                #090b12;
+            color: white;
+        }
+
+        .container {
+            text-align: center;
+            padding: 30px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #aaa;
+            margin-bottom: 45px;
+            font-size: 17px;
+        }
+
+        .cards {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 260px;
+            height: 230px;
+            border-radius: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(15px);
+
+            transition: 0.3s ease;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-10px) scale(1.03);
+            background: rgba(255, 255, 255, 0.14);
+            box-shadow: 0 20px 45px rgba(0,0,0,0.4);
+        }
+
+        .icon {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+
+        .card h2 {
+            font-size: 25px;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            color: #bbb;
+            font-size: 14px;
+        }
+
+        .vtop:hover {
+            border-color: #4fc3f7;
+            box-shadow: 0 15px 45px rgba(79, 195, 247, 0.2);
+        }
+
+        .anime:hover {
+            border-color: #e879f9;
+            box-shadow: 0 15px 45px rgba(232, 121, 249, 0.2);
+        }
+
+        footer {
+            margin-top: 50px;
+            color: #666;
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 35px;
+            }
+
+            .cards {
+                flex-direction: column;
+            }
+
+            .card {
+                width: 280px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Praveen's Space</h1>
+    <p class="subtitle">Where are we going today?</p>
+
+    <div class="cards">
+
+        <a class="card vtop"
+           href="https://vtop.vitbhopal.ac.in/vtop/login"
+           target="_blank">
+
+            <div class="icon">🎓</div>
+
+            <h2>VTOP</h2>
+            <p>College Portal</p>
+
+        </a>
+
+
+        <a class="card anime"
+           href="https://animesalt.link/"
+           target="_blank">
+
+            <div class="icon">❤️</div>
+
+            <h2>ANIME</h2>
+            <p>Time to Watch</p>
+
+        </a>
+
+    </div>
+
+    <footer>
+        Praveen's Personal Dashboard
+    </footer>
+
+</div>
+
+</body>
+</html>
